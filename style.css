@@ -1,0 +1,142 @@
+/* Global Styles */
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #000000;
+	background-color: #f5f5f5;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	width: fit-content;
+}
+
+p {
+	padding: 10px;
+}
+
+h2 {
+	margin: 10px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	background-color: #ffffff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header h1 {
+	margin: auto;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-left: 0rem;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	display: block;
+	padding: 5px;
+}
+
+nav a:hover {
+	background-color: #f76f6f;
+}
+
+main {
+	margin: 2rem auto;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main section {
+	flex: 1;
+	margin-right: 2rem;
+}
+
+main section h2 {
+	margin-top: 0;
+	margin-left: 100;
+}
+
+main section article {
+	margin-bottom: 2rem;
+}
+
+main section article header {
+	margin-bottom: 1rem;
+}
+
+main section article header h3 {
+	margin: 0;
+}
+
+main section article header time {
+	font-size: 0.8rem;
+	color: #ff0202;
+}
+
+main section article footer {
+	margin-top: 1rem;
+	text-align: right;
+	margin-left: 1rem;
+}
+
+aside {
+	flex-basis: 300px;
+	margin-left: 2rem;
+}
+
+aside h2 {
+	margin-top: 0;
+	margin: 2;
+}
+
+footer {
+	background-color: #b3b0b0;
+	color: #ff0000;
+	text-align: center;
+	padding: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+	}
+	main section {
+		margin-right: 0;
+	}
+	aside {
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+}
